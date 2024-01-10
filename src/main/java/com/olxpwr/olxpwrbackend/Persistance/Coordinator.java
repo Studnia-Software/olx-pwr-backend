@@ -2,14 +2,12 @@ package com.olxpwr.olxpwrbackend.Persistance;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.util.UUID;
 
 @Entity
 @Data
+@Table(name = "coordinators")
 public class Coordinator {
 
     @Id
@@ -17,8 +15,6 @@ public class Coordinator {
     private UUID id;
 
     @OneToOne
-    private Project Project;
-
-    @OneToOne
+    @JoinColumn(name = "fk_coordinator")
     private User User;
 }

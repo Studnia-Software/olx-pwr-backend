@@ -1,0 +1,26 @@
+jakarta:
+    persistence:
+        schema-generation:
+            create-source: metadata
+            drop-source: metadata
+            scripts:
+                action: ''
+                create-target: ''
+                drop-target: ''
+spring:
+    datasource:
+        password: root
+        url: jdbc:postgresql://localhost:5432/olx-pwr-backend
+        username: postgres
+    jpa:
+        database: POSTGRESQL
+        generate-ddl: true
+        hibernate:
+            ddl-auto: create-drop
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                jdbc:
+                    lob:
+                        non_contextual_creation: true
+        show-sql: true
