@@ -13,7 +13,7 @@ public class Role
 {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private int id;
 
     @Enumerated(EnumType.STRING)
     private UserRole RoleName;

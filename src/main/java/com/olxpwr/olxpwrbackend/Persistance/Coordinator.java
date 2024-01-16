@@ -12,7 +12,7 @@ public class Coordinator {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private int id;
 
     @OneToOne
     @JoinColumn(name = "fk_coordinator")

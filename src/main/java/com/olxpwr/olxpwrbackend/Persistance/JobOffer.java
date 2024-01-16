@@ -15,7 +15,7 @@ public class JobOffer {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(nullable = false)
-    private UUID id;
+    private int id;
 
     @Column(name = "title")
     private String Title;
