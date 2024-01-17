@@ -1,6 +1,6 @@
 # olx-pwr-backend
 
-##Setup:
+## Setup:
 1. Install postgresql
 2. Create database olx-pwr-backend*
 3. Power up app
@@ -14,3 +14,6 @@
  1. https://www.prisma.io/dataguide/postgresql/setting-up-a-local-postgresql-database#setting-up-postgresql-on-windows
  2. log into psql
  3. ```create database olx-pwr-backend```
+
+ ## Testing:
+ Go into `http://localhost:8080/swagger-ui` and enjoy
