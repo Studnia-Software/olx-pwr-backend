@@ -13,7 +13,7 @@ import java.util.UUID;
 @Table(name = "job_offers")
 public class JobOffer {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
     private int id;
 

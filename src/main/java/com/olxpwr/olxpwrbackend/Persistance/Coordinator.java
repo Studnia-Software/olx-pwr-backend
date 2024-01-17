@@ -11,7 +11,7 @@ import java.util.UUID;
 public class Coordinator {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @OneToOne
