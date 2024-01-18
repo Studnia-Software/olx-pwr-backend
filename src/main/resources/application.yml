@@ -10,8 +10,8 @@ jakarta:
 spring:
     datasource:
         password: root
-        url: jdbc:postgresql://localhost:5432/olx-pwr-backend
-        username: postgres
+        url: jdbc:postgresql://localhost:5432/pgsql-db
+        username: user
     jpa:
         database: POSTGRESQL
         generate-ddl: true
