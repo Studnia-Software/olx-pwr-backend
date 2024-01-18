@@ -40,6 +40,9 @@ public class User
     @Enumerated(EnumType.STRING)
     private UserStatus StudentStatus;
 
+    @Column(name = "Profile_picture")
+    private byte[] ProfilePicture;
+
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_user")
     private Set<JobOffer> JobOffers = new HashSet<>();

@@ -16,7 +16,7 @@ spring:
         database: POSTGRESQL
         generate-ddl: true
         hibernate:
-            ddl-auto: create-drop
+            ddl-auto: create
         properties:
             hibernate:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -24,3 +24,10 @@ spring:
                     lob:
                         non_contextual_creation: true
         show-sql: true
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
+
+springdoc:
+  swagger-ui:
+      path: "/swagger-ui.html"

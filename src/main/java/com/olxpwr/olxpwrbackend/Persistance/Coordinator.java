@@ -11,8 +11,8 @@ import java.util.UUID;
 public class Coordinator {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     @OneToOne
     @JoinColumn(name = "fk_coordinator")
