@@ -1,19 +1,12 @@
 # olx-pwr-backend
 
 ## Setup:
-1. Install postgresql
-2. Create database olx-pwr-backend*
-3. Power up app
-
-
-*Linux: 
-  1. ```su postgres```
-  2. ```create database olx-pwr-backend```
-
-*Windows:
- 1. https://www.prisma.io/dataguide/postgresql/setting-up-a-local-postgresql-database#setting-up-postgresql-on-windows
- 2. log into psql
- 3. ```create database olx-pwr-backend```
+0. Install docker -> https://docs.docker.com/desktop/install/windows-install/
+1. ```cd olx-pwr-backend```
+2. ```cd docker```
+3. ```docker compose up -d ```
+4. ```create database olx-pwr-backend```
+5. Power up app
 
  ## Testing:
  Go into `http://localhost:8080/swagger-ui` and enjoy
